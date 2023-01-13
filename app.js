@@ -10,6 +10,9 @@ const path = require('path');
 // 2. pw 为密码
 // 3. 请按需通过post传递数据
 // by longan2244
+// github :https://github.com/longan2244
+// 博客  ：longans.top
+//qq :2244420174
 // app.use('/', express.static(path.join(__dirname, './dist')));
 app.use(cors())
 app.use(express.urlencoded({ extended: false }))
@@ -30,6 +33,7 @@ app.post('/getlzy', (req, res) => {
   }
   //没有密码
   gethtml(url).then(data => {
+    //qq :2244420174
     return res.send(data)
   }).catch(err => {
     return res.send({
