@@ -55,11 +55,12 @@ async function ajaxtolzy(url, sign, p) {
 }
 //获取sign
 function getsign(res) {
+  // console.log(res);
   return res.split(`$.ajax({`)[1].split(`success:function(msg)`)[0].split(`,`)[3].split(`data : 'action=downprocess&sign=`)[1].split(`&p='+pwd`)[0];
 }
 
 
 module.exports = {
   ajaxtolzy,
-  gofile,
+  gofile
 };
