@@ -16,6 +16,7 @@ const path = require('path');
 // app.use('/', express.static(path.join(__dirname, './dist')));
 app.use(cors())
 app.use(express.urlencoded({ extended: false }))
+//这里是post请求 不懂联系我QQ //qq :2244420174
 app.post('/getlzy', (req, res) => {
   let url = req.body.url;
   let p = req.body.pw;
